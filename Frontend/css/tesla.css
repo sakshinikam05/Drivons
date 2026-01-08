@@ -1,0 +1,39 @@
+body ,html {
+	margin: 0 auto;
+	background: #030405;
+    font-family: 'Arial',sans-serif;
+}
+svg {
+	cursor: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	left: 50%;
+	transform: translate(-50%);
+}
+#car, #lights, #lightPath {
+	transition: 3000ms;
+}
+
+.guide-message {
+    font-size: 65px;  
+    font-weight: bold;
+    color: rgba(237, 237, 237, 0.726);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.366);
+    text-align: center;
+    font-family: 'Arial',sans-serif;
+	position: relative;
+	margin-top: 170px; 
+}
+
+.message1 {
+    font-size: 18px;  
+    font-weight: normal;
+    color: rgba(237, 237, 237, 0.726);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.366);
+    text-align: center;
+    font-family: 'Arial',sans-serif;
+	position: relative;
+    margin: -35px;
+}

@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Uploads
+uploads/
+Backend/uploads/
+Frontend/uploads/
+
+# Database backups
+*.sql
+*.sql.bak
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build folders
+dist/
+build/

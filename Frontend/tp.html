@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Drivons — Women's Carpooling</title>
+  <meta name="description" content="Safe, women-only carpooling. Drivers & passengers opt-in community." />
+  <style>
+    :root{
+      --accent:#0b63ff;
+      --muted:#6b7280;
+      --bg:#f7f9fc;
+      --card:#ffffff;
+      --radius:14px;
+      --max:1100px;
+      --glass: rgba(255,255,255,0.7);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#eef4ff 60%);color:#0f1724;line-height:1.4}
+    .container{max-width:var(--max);margin:40px auto;padding:24px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center}
+    .badge{display:inline-block;background:rgba(11,99,255,0.12);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;margin-bottom:12px}
+    h1{font-size:40px;margin:6px 0 12px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn.secondary{background:transparent;color:var(--accent);border:2px solid rgba(11,99,255,0.12)}
+
+    /* card */
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 8px 30px rgba(15,23,36,0.06)}
+    .stats{display:flex;gap:12px}
+    .stat{flex:1;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);text-align:center}
+    .stat h3{margin:0;font-size:18px}
+    .stat p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    /* features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+    .feature{padding:14px;border-radius:12px;background:var(--card);box-shadow:0 6px 18px rgba(15,23,36,0.04)}
+    .feature h4{margin:6px 0}
+    .feature p{color:var(--muted);font-size:14px}
+
+    /* right column preview */
+    .preview{padding:18px;border-radius:12px;background:linear-gradient(135deg,#fff,#f4f9ff);text-align:center}
+    .preview img{max-width:100%;border-radius:10px}
+
+    /* modal */
+    .modal-backdrop{position:fixed;inset:0;background:rgba(5,10,25,0.35);display:flex;align-items:center;justify-content:center;padding:20px;z-index:40}
+    .modal{width:100%;max-width:520px;background:var(--card);border-radius:12px;padding:18px}
+    .modal h3{margin:0 0 8px}
+    .form-row{display:flex;gap:10px;margin-bottom:12px}
+    .form-row .col{flex:1}
+    input[type=text],input[type=email],input[type=tel],select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eefb}
+    .radio-group{display:flex;gap:8px}
+    .radio{padding:8px 12px;border-radius:8px;border:1px solid #eef4ff;cursor:pointer}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+    }
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    .logo{font-weight:800;color:var(--accent);letter-spacing:0.6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header style="display:flex;justify-content:space-between;align-items:center">
+      <div class="logo">Drivons</div>
+      <nav class="small">
+        <button class="btn" id="openOptin">Join Community</button>
+      </nav>
+    </header>
+
+    <main class="hero" role="main">
+      <section>
+        <span class="badge">Women-only • Safe • Verified</span>
+        <h1>Share rides, build community — safe carpooling for women</h1>
+        <p class="lead">Find trusted women drivers and passengers nearby. Save money, meet colleagues, make commutes safer and friendlier.</p>
+
+        <div style="display:flex;gap:12px;align-items:center">
+          <button class="btn" id="primaryJoin">I want to join</button>
+          <button class="btn secondary" id="learnMore">How it works</button>
+        </div>
+
+        <div style="margin-top:18px" class="card">
+          <div class="stats">
+            <div class="stat"><h3>1.2k+</h3><p>Women drivers</p></div>
+            <div class="stat"><h3>8.6k+</h3><p>Completed rides</p></div>
+            <div class="stat"><h3>99%</h3><p>Safety rating</p></div>
+          </div>
+
+          <div class="features" style="margin-top:14px">
+            <div class="feature"><strong>Verified profiles</strong><p>All members verified via ID and phone — safety first.</p></div>
+            <div class="feature"><strong>Driver & passenger opt-in</strong><p>Choose your role and preferences when you join the community.</p></div>
+            <div class="feature"><strong>Schedule & groups</strong><p>Create regular routes, join workplace groups and carpool with friends.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="preview">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=abcd" alt="women carpool" />
+        <p class="small" style="margin-top:12px">Join local groups — college, office, neighbourhood</p>
+      </aside>
+    </main>
+
+    <footer>
+      &copy; Drivons • Built for women • <span class="small">Privacy-focused</span>
+    </footer>
+  </div>
+
+  <!-- Opt-in Modal (hidden by default) -->
+  <template id="optinTemplate">
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="optinTitle">
+        <button id="closeModal" style="float:right;background:transparent;border:0;font-size:18px;cursor:pointer">✕</button>
+        <h3 id="optinTitle">Join Drivons Community</h3>
+        <p class="small">Select whether you are joining as a Driver or Passenger. We'll keep your details private.</p>
+
+        <div style="margin-top:10px">
+          <div class="radio-group" id="roleGroup" role="radiogroup" aria-label="Join as">
+            <div class="radio" data-role="passenger">Passenger</div>
+            <div class="radio" data-role="driver">Driver</div>
+          </div>
+        </div>
+
+        <form id="optinForm" style="margin-top:12px">
+          <div class="form-row">
+            <div class="col"><input id="name" type="text" placeholder="Full name" required></div>
+            <div class="col"><input id="email" type="email" placeholder="Email" required></div>
+          </div>
+          <div class="form-row">
+            <div class="col"><input id="phone" type="tel" placeholder="Phone (WhatsApp)" required></div>
+            <div class="col"><input id="city" type="text" placeholder="City" required></div>
+          </div>
+
+          <div id="driverFields" style="display:none;margin-bottom:12px">
+            <div class="form-row">
+              <div class="col"><input id="carModel" type="text" placeholder="Car model (e.g., Swift)" ></div>
+              <div class="col"><input id="seats" type="text" placeholder="Seats available" ></div>
+            </div>
+            <div style="font-size:13px;color:var(--muted)">Drivers will be asked to verify ID & vehicle later.</div>
+          </div>
+
+          <div style="display:flex;gap:8px;margin-top:12px;justify-content:flex-end;align-items:center">
+            <button type="button" class="btn secondary" id="cancelBtn">Cancel</button>
+            <button type="submit" class="btn">Join Community</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    // Open modal
+    const openButtons = [document.getElementById('openOptin'), document.getElementById('primaryJoin')];
+    const template = document.getElementById('optinTemplate');
+
+    function showModal(){
+      const node = template.content.cloneNode(true);
+      document.body.appendChild(node);
+      const backdrop = document.getElementById('modalBackdrop');
+      const close = document.getElementById('closeModal');
+      const cancel = document.getElementById('cancelBtn');
+      const roleEls = document.querySelectorAll('.radio');
+      const driverFields = document.getElementById('driverFields');
+      const form = document.getElementById('optinForm');
+
+      // default role
+      let role = 'passenger';
+      highlightRole('passenger');
+
+      function highlightRole(r){
+        roleEls.forEach(el=>{
+          if(el.dataset.role===r){ el.style.borderColor='var(--accent)'; el.style.background='rgba(11,99,255,0.06)'; }
+          else { el.style.borderColor=''; el.style.background=''; }
+        })
+        role = r;
+        driverFields.style.display = (r==='driver')? 'block' : 'none';
+      }
+
+      roleEls.forEach(el=> el.addEventListener('click', ()=> highlightRole(el.dataset.role)));
+
+      close.addEventListener('click', ()=> backdrop.remove());
+      cancel.addEventListener('click', ()=> backdrop.remove());
+
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const data = {
+          role, name:document.getElementById('name').value.trim(), email:document.getElementById('email').value.trim(),
+          phone:document.getElementById('phone').value.trim(), city:document.getElementById('city').value.trim(),
+          carModel:document.getElementById('carModel').value.trim(), seats:document.getElementById('seats').value.trim(),
+          joinedAt:new Date().toISOString()
+        };
+
+        // basic validation
+        if(!data.name || !data.email || !data.phone || !data.city){ alert('Please fill required fields'); return; }
+
+        // simulate save (save to localStorage). Replace with real API call.
+        const community = JSON.parse(localStorage.getItem('drivons_community')||'[]');
+        community.push(data);
+        localStorage.setItem('drivons_community', JSON.stringify(community));
+
+        backdrop.innerHTML = `<div style="background:var(--card);padding:20px;border-radius:12px;text-align:center;max-width:420px"><h3>Thank you!</h3><p class="small">You have successfully joined as <strong>${role}</strong>. We'll contact you at <strong>${data.email}</strong>.</p><button id="closeDone" class="btn">Close</button></div>`;
+        document.getElementById('closeDone').addEventListener('click', ()=> backdrop.remove());
+      });
+    }
+
+    openButtons.forEach(b=>b.addEventListener('click', showModal));
+    document.getElementById('learnMore').addEventListener('click', ()=> alert('Drivons matches women drivers and passengers for regular commutes. Create groups, set schedules and verify IDs.'));
+
+    // keyboard accessibility: open modal with Enter on primaryJoin
+    document.getElementById('primaryJoin').addEventListener('keyup', (e)=>{ if(e.key==='Enter') showModal(); });
+  </script>
+</body>
+</html>
