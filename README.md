@@ -635,7 +635,7 @@ post_max_size       = 10M
         <sub><b>Sakshi Nikam</b></sub>
       </a>
       <br />
-      <sub>Developer · Designer/sub>
+      <sub>Developer · Designer</sub>
     </td>
   </tr>
 </table>
