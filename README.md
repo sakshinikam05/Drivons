@@ -671,6 +671,6 @@ The documentation contains **screenshots of all pages** of the DRIVONS platform,
 ---
 <div align="center">
   
-> #### Built with ❤️ by **[Sakshi Nikam](https://github.com/sakshinikam05)**
+> #### Built with 🥤 & ❤️ by **[Sakshi Nikam](https://github.com/sakshinikam05)**
 > 
 > © DRIVONS 2025 · All Rights Reserved · Academic & Portfolio Project
