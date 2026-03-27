@@ -626,7 +626,10 @@ post_max_size       = 10M
 ## 📸 Screenshots
 
 > Refer to the following folder and document for full project screenshots and visual documentation:
-> [🔗 View on Google Drive](https://drive.google.com/file/d/1FwK17Sipa18nZOpAsTYGYJU0BLafaPj9/view?usp=drivesdk)
+
+> [📁 Screenshot/Drivons_SS](Screenshot/Drivons_SS)
+
+> High-Resolution PDF: [🔗 View on Google Drive](https://drive.google.com/file/d/1FwK17Sipa18nZOpAsTYGYJU0BLafaPj9/view?usp=drivesdk)
 
 ### 📄 Comprehensive Visual Guide
 The documentation contains **screenshots of all pages** of the DRIVONS platform, including the user frontend, dealer inventory, AI-Bot Integration.
