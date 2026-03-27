@@ -3,7 +3,7 @@
 # <p align="center"><font color="#007BFF">D R I V O N S</font></p>
 
 > ### 🚗 **Premium Car Rental & Intelligent Fleet Management System** 🚗
-> ✨ **Seamless Rentals** &nbsp; • &nbsp; 🛡️ **Verified Drivers** &nbsp; • &nbsp; ⚡ **Intelligent Fleet**
+> ✨ **Seamless Rentals** &nbsp; | &nbsp; 🛡️ **Verified Drivers** &nbsp; | &nbsp; ⚡ **Intelligent Fleet**
 
 ---
 <p align="center">
